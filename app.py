@@ -12,7 +12,6 @@ import streamlit as st
 from train_model import make_features, generate_dataset, FEATURE_COLUMNS, BASE_COLUMNS
 
 BASE_DIR = Path(__file__).resolve().parent
-
 MODEL_PATH = BASE_DIR / "models" / "sensor_models.joblib"
 DATA_PATH = BASE_DIR / "data" / "sensor_data.csv"
 
