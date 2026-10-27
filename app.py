@@ -11,8 +11,10 @@ import streamlit as st
 
 from train_model import make_features, generate_dataset, FEATURE_COLUMNS, BASE_COLUMNS
 
-MODEL_PATH = Path("models/sensor_models.joblib")
-DATA_PATH = Path("data/sensor_data.csv")
+BASE_DIR = Path(__file__).resolve().parent
+
+MODEL_PATH = BASE_DIR / "models" / "sensor_models.joblib"
+DATA_PATH = BASE_DIR / "data" / "sensor_data.csv"
 
 st.set_page_config(page_title="Explainable Sensor Data Detection", page_icon="📡", layout="wide")
 
